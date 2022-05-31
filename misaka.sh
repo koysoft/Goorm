@@ -39,7 +39,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
     chmod +x railgun
     read -rp "请设置UUID（如无设置则使用脚本默认的）：" uuid
     if [[ -z $uuid ]]; then
-        uuid="8d4a8f5e-c2f7-4c1b-b8c0-f8f5a9b6c384"
+        uuid="eef256a2-0743-4da4-b080-fa97cc743cfe"
     fi
     cat <<EOF > kazari.json
 {
@@ -48,7 +48,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
     },
     "inbounds": [
         {
-            "port": 11111,
+            "port": 10086,
             "protocol": "vmess",
             "settings": {
                 "clients": [
@@ -64,7 +64,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
             }
         },
         {
-            "port": 11111,
+            "port": 10086,
             "protocol": "vless",
             "settings": {
                 "clients": [
